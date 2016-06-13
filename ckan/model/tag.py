@@ -20,7 +20,7 @@ __all__ = ['tag_table', 'package_tag_table', 'Tag', 'PackageTag',
            'MAX_TAG_LENGTH', 'MIN_TAG_LENGTH']
 
 MAX_TAG_LENGTH = 100
-MIN_TAG_LENGTH = 2
+MIN_TAG_LENGTH = 1
 
 tag_table = Table('tag', meta.metadata,
         Column('id', types.UnicodeText, primary_key=True, default=_types.make_uuid),
